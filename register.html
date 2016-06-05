@@ -1,0 +1,119 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="register.css" /> 
+  <script type="text/javascript" src="http://www.w3school.com.cn/jquery/jquery.js"></script>
+  <meta charset = "utf-8">
+  <style type="text/css">
+    #tijiao {
+      width: 40%;
+      height: 50px;
+      font-size: 18px;
+      margin-left: 70px;
+    }
+    #biaoti{
+      margin-top: 50px;
+      font-size: 50px;
+      width: 38%;
+      margin-left: 38%;
+    }
+  </style>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    var ac_mes = 0,
+        account,
+        password;
+    $(".input_text #accout_in").blur(function(){
+      account = $(this).val();
+      if (!account) {
+        document.getElementById("accout_err").innerHTML="*"+"用户名不能为空";
+      } else {
+        $.ajax({
+          type: "POST",
+          url:"aja.php",
+          data: 'cont={"accout":"'+account+'"}',
+          success: function(data) {
+            if (data)
+              ac_mes = 1;
+            else
+              ac_mes = 0;
+              document.getElementById("accout_err").innerHTML="*"+data;
+          },
+          error: function() {
+            alert("ajax error");
+          }
+        });
+      }
+    });
+
+
+
+    $(".input_text #passw_in").blur(function(){
+      var password = $(this).val();
+      if (!password) {
+        document.getElementById("passw_err").innerHTML="*"+"密码不能为空";
+        ac_mes = 2;
+      } 
+    });
+    
+    /*var xmlhttp;
+    if (window.XMLHttpRequest)
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+      xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {// code for IE6, IE5
+      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function()
+    {
+      if (xmlhttp.readyState  == 4 && xmlhttp.status == 200)
+    {
+      document.getElementById("accout_err").innerHTML="*"+xmlhttp.responseText;
+    }
+    }
+    xmlhttp.open("GET", "aja.php?q=" + str, true);
+    xmlhttp.send();
+    */
+
+
+    $("#zhong #tijiao").click(function() {
+      if (ac_mes == 1) {
+        alert("用户名已被注册。");
+      } else if (ac_mes == 2){
+        alert("密码不能为空")
+      } else {
+        this.form.action="register.php?account="+account+"&password="+password;
+        this.form.submit();
+      }
+    });
+
+  });
+  </script>
+</head>
+<body> 
+
+<div id = "biaoti">注册</div>
+<div id = "wrap1">
+<div id = "zhong">
+<p><span class="error">* 必需的字段</span></p>
+<form method="post" action="test_.php" id = "asd"> 
+   <div class = "input_">
+      <div class = "input_lei">用户名：</div>
+      <div class = "input_text"><input type="text" name="name"  id = "accout_in"></div>
+      <span class="error" id = "accout_err">*</span>
+      <br><br>
+   </div>
+   <div class = "input_">
+      <div class = "input_lei">密码：</div>
+      <div class = "input_text"><input type="text" name="password"  id = "passw_in"></div>
+      <span class="error" id = "passw_err">* </span>
+      <br><br>
+   </div>
+   <input type="button" id = "tijiao"  value="提交"> 
+</form>
+</div>
+</div>
+
+</body>
+</html>
