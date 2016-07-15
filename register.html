@@ -1,8 +1,8 @@
 <!DOCTYPE HTML> 
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="register.css" /> 
-  <script type="text/javascript" src="http://www.w3school.com.cn/jquery/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/register.css" /> 
+  <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
   <meta charset = "utf-8">
   <style type="text/css">
     #tijiao {
@@ -19,7 +19,7 @@
     }
   </style>
   <script type="text/javascript">
-  $(document).ready(function(){
+  window.onload = function() {
     var ac_mes = 0,
         account,
         password;
@@ -30,7 +30,7 @@
       } else {
         $.ajax({
           type: "POST",
-          url:"aja.php",
+          url:"php/aja.php",
           data: 'cont={"accout":"'+account+'"}',
           success: function(data) {
             if (data)
@@ -49,11 +49,14 @@
 
 
     $(".input_text #passw_in").blur(function(){
-      var password = $(this).val();
+      password = $(this).val();
       if (!password) {
         document.getElementById("passw_err").innerHTML="*"+"密码不能为空";
         ac_mes = 2;
-      } 
+      }else  {
+        ac_mes = 0;
+        document.getElementById("accout_err").innerHTML="*"+data;
+      }
     });
     
     /*var xmlhttp;
@@ -88,7 +91,7 @@
       }
     });
 
-  });
+  }
   </script>
 </head>
 <body> 
@@ -97,7 +100,7 @@
 <div id = "wrap1">
 <div id = "zhong">
 <p><span class="error">* 必需的字段</span></p>
-<form method="post" action="test_.php" id = "asd"> 
+<form method="post" id = "asd"> 
    <div class = "input_">
       <div class = "input_lei">用户名：</div>
       <div class = "input_text"><input type="text" name="name"  id = "accout_in"></div>
