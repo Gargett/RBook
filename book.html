@@ -1,3 +1,63 @@
+
+  if (document.cookie.length>0) {
+    /*var c_start=document.cookie.indexOf("user=")
+    if (c_start!=-1) { 
+      c_start+= 5;
+      c_end=document.cookie.length;
+      alert(decodeURI(document.cookie.substring(c_start,c_end)));
+    }*/
+  } else {
+    window.location.href = "login.html";
+  }
+  function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+  }
+</script>
+<script type="text/javascript">
+window.onload = function() {
+  if(getQueryString("error_") != null) {
+      $("#error_").html("抱歉。该时间段座位已满..");
+    }
+  var c_start=document.cookie.indexOf("user=");
+        if (c_start!=-1) { 
+            c_start+= 5;
+          c_end=document.cookie.indexOf(";");
+            $("#zhaohu").html("你好，"+decodeURI(document.cookie.substring(c_start,c_end)));
+        }
+        <!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
 <!DOCTYPE HTML> 
 <html>
 <head>
@@ -30,33 +90,3956 @@
 <body> 
 <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
 <script type="text/javascript">
-  if (document.cookie.length>0) {
-    /*var c_start=document.cookie.indexOf("user=")
-    if (c_start!=-1) { 
-      c_start+= 5;
-      c_end=document.cookie.length;
-      alert(decodeURI(document.cookie.substring(c_start,c_end)));
-    }*/
-  } else {
-    window.location.href = "login.html";
-  }
-  function getQueryString(name) {
-    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-    var r = window.location.search.substr(1).match(reg);
-    if (r != null) return unescape(r[2]); return null;
-  }
-</script>
-<script type="text/javascript">
-window.onload = function() {
-  if(getQueryString("error_") != null) {
-      $("#error_").html("抱歉。该时间段座位已满..");
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
     }
-  var c_start=document.cookie.indexOf("user=");
-        if (c_start!=-1) { 
-            c_start+= 5;
-          c_end=document.cookie.indexOf(";");
-            $("#zhaohu").html("你好，"+decodeURI(document.cookie.substring(c_start,c_end)));
-        }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+
+v
+v
+
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"><!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
 }
 $(document).ready(function(){
   $("#se1").mouseover(function(){
