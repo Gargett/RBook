@@ -1,3 +1,310 @@
+
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+  <!DOCTYPE HTML> 
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/daohang.css">
+  <link rel="stylesheet" type="text/css" href="css/book.css" /> 
+  <style type="text/css">
+    #back {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #zhong {
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+    }
+    #biaoti {
+
+      width: 840px;
+      margin: auto;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body> 
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+  if (document.cookie.length>0) {
+    /*var c_start=document.cookie.indexOf("user=")
+    if (c_start!=-1) { 
+      c_start+= 5;
+      c_end=document.cookie.length;
+      alert(decodeURI(document.cookie.substring(c_start,c_end)));
+    }*/
+  } else {
+    window.location.href = "login.html";
+  }
+  function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+  }
+</script>
+<script type="text/javascript">
+window.onload = function() {
+  if(getQueryString("error_") != null) {
+      $("#error_").html("抱歉。该时间段座位已满..");
+    }
+  var c_start=document.cookie.indexOf("user=");
+        if (c_start!=-1) { 
+            c_start+= 5;
+          c_end=document.cookie.indexOf(";");
+            $("#zhaohu").html("你好，"+decodeURI(document.cookie.substring(c_start,c_end)));
+        }
+}
+$(document).ready(function(){
+  $("#se1").mouseover(function(){
+    $("#se1 .layer").css("display","block");
+  });
+  $("#se1").mouseout(function(){
+    $("#se1 .layer").css("display","none");
+  });
+  $("#se1").click(function(){
+    $("#se1 .layer").animate({
+                              'opacity':'0.8'
+                              }, 100);
+    $("#se1").animate({'left':'15px'}, 100);
+    setTimeout("$('#se1').animate({'left':'20px'}, 100);",100);
+  });
+
+  $("#se2").mouseover(function(){
+    $("#se2 .layer").css("display","block");
+  });
+  $("#se2").mouseout(function(){
+    $("#se2 .layer").css("display","none");
+  });
+  $("#se2").click(function(){
+    $("#se2 .layer").animate({
+                              'opacity':'0.8'
+                              }, 100);
+    $("#se2").animate({'left':'305px'}, 100);
+    setTimeout("$('#se2').animate({'left':'300px'}, 100);",100);
+  });
+
+
+  $("#se3").mouseover(function(){
+    $("#se3 .layer").css("display","block");
+  });
+  $("#se3").mouseout(function(){
+    $("#se3 .layer").css("display","none");
+  });
+  $("#se3").click(function(){
+    $("#se3 .layer").animate({
+                              'opacity':'0.8'
+                              }, 100);
+    $("#se3").animate({'left':'605px'}, 100);
+    setTimeout("$('#se3').animate({'left':'600px'}, 100);",100);
+  });
+});
+</script>
+<img src="image/back.jpg" id = "back">
+  <div id ="daohang">
+    <div id = "daohang_wrap"></div>
+    <div id = "wrap"></div>
+    <ul>
+      <li><a href="index.html">主页</a></li>
+      <li><a href="menu.html">菜谱</a></li>
+    </ul>
+    <a href="javascript:;" id = "yiding">
+      <span id ="zuo">已订菜品</span>
+      <span id = "you"></span>
+    </a>
+    <span id = "zhaohu"></span>
+  </div>
+<div id = "biaoti">订位</div>
+<div id = "zhong">
+  
+<div id = "select"><div class ="in_select" onclick = "select(1)" id = "se1"><div class = "layer" id = "se1l">lunch</div></div>
+                   <div class ="in_select" onclick = "select(2)" id = "se2"><div class = "layer" id = "se2l">high tea</div></div>
+                   <div class ="in_select" onclick = "select(3)" id = "se3"><div class = "layer" id = "se3l">dinner</div></div>
+</div>
+<div id = "form_">
+<form method="post" action="php/book.php"> 
+   <div id="time_se">你选择的时间是：
+    <input type="text" name="time_select" id = "text_" readonly="true">
+    你的手机号码为：<input type="text" name="phone_num">
+   </div>
+   <br><br>
+   <button type="submit">提交</button>
+</form>
+<div id ="error_"></div>
+</div>
+</div>
+<script type="text/javascript">
+  function select(x) {
+    if (x == 1) {
+      document.getElementById("text_").value = "lunch";
+    } else if (x == 2) {
+      document.getElementById("text_").value = "hightea";
+    } else {
+      document.getElementById("text_").value = "dinner";
+    }
+
+  }
+</script>
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+  if (document.cookie.length>0) {
+    /*var c_start=document.cookie.indexOf("user=")
+    if (c_start!=-1) { 
+      c_start+= 5;
+      c_end=document.cookie.length;
+      alert(decodeURI(document.cookie.substring(c_start,c_end)));
+    }*/
+  } else {
+    window.location.href = "login.html";
+  }
+  function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+  }
+</script>
+<script type="text/javascript">
+window.onload = function() {
+  if(getQueryString("error_") != null) {
+      $("#error_").html("抱歉。该时间段座位已满..");
+    }
+  var c_start=document.cookie.indexOf("user=");
+        if (c_start!=-1) { 
+            c_start+= 5;
+          c_end=document.cookie.indexOf(";");
+            $("#zhaohu").html("你好，"+decodeURI(document.cookie.substring(c_start,c_end)));
+        }
+}
+$(document).ready(function(){
+  $("#se1").mouseover(function(){
+    $("#se1 .layer").css("display","block");
+  });
+  $("#se1").mouseout(function(){
+    $("#se1 .layer").css("display","none");
+  });
+  $("#se1").click(function(){
+    $("#se1 .layer").animate({
+                              'opacity':'0.8'
+                              }, 100);
+    $("#se1").animate({'left':'15px'}, 100);
+    setTimeout("$('#se1').animate({'left':'20px'}, 100);",100);
+  });
+
+  $("#se2").mouseover(function(){
+    $("#se2 .layer").css("display","block");
+  });
+  $("#se2").mouseout(function(){
+    $("#se2 .layer").css("display","none");
+  });
+  $("#se2").click(function(){
+    $("#se2 .layer").animate({
+                              'opacity':'0.8'
+                              }, 100);
+    $("#se2").animate({'left':'305px'}, 100);
+    setTimeout("$('#se2').animate({'left':'300px'}, 100);",100);
+  });
+
+
+  $("#se3").mouseover(function(){
+    $("#se3 .layer").css("display","block");
+  });
+  $("#se3").mouseout(function(){
+    $("#se3 .layer").css("display","none");
+  });
+  $("#se3").click(function(){
+    $("#se3 .layer").animate({
+                              'opacity':'0.8'
+                              }, 100);
+    $("#se3").animate({'left':'605px'}, 100);
+    setTimeout("$('#se3').animate({'left':'600px'}, 100);",100);
+  });
+});
+</script>
+<img src="image/back.jpg" id = "back">
+  <div id ="daohang">
+    <div id = "daohang_wrap"></div>
+    <div id = "wrap"></div>
+    <ul>
+      <li><a href="index.html">主页</a></li>
+      <li><a href="menu.html">菜谱</a></li>
+    </ul>
+    <a href="javascript:;" id = "yiding">
+      <span id ="zuo">已订菜品</span>
+      <span id = "you"></span>
+    </a>
+    <span id = "zhaohu"></span>
+  </div>
+<div id = "biaoti">订位</div>
+<div id = "zhong">
+  
+<div id = "select"><div class ="in_select" onclick = "select(1)" id = "se1"><div class = "layer" id = "se1l">lunch</div></div>
+                   <div class ="in_select" onclick = "select(2)" id = "se2"><div class = "layer" id = "se2l">high tea</div></div>
+                   <div class ="in_select" onclick = "select(3)" id = "se3"><div class = "layer" id = "se3l">dinner</div></div>
+</div>
+<div id = "form_">
+<form method="post" action="php/book.php"> 
+   <div id="time_se">你选择的时间是：
+    <input type="text" name="time_select" id = "text_" readonly="true">
+    你的手机号码为：<input type="text" name="phone_num">
+   </div>
+   <br><br>
+   <button type="submit">提交</button>
+</form>
+<div id ="error_"></div>
+</div>
+</div>
+<script type="text/javascript">
+  function select(x) {
+    if (x == 1) {
+      document.getElementById("text_").value = "lunch";
+    } else if (x == 2) {
+      document.getElementById("text_").value = "hightea";
+    } else {
+      document.getElementById("text_").value = "dinner";
+    }
+
+  }
+</script>
+
+</body>
+</html>
 <!DOCTYPE HTML> 
 <html>
 <head>
